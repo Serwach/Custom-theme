@@ -4,7 +4,10 @@
 
 :root {
     --red-default: #E30613;
+    --red-link: #EE2818;
+    --red-link-visited: #E41549;
     --white: #FFFFFF;
+    --link-default: #707070;
 
     --sans-fonts: "Helvetica Neue", Helvetica, 'BentonSans', Arial, sans-serif;
     --serif-fonts: abril-titling, Georgia, serif;
@@ -19,3 +22,23 @@
 @button-primary__hover__border: 1px solid var(--red-default);
 @button-primary__font-size: 12px;
 @button-primary__font-family: var(--sans-fonts);
+
+//
+//  Links
+//  ---------------------------------------------
+
+@link__color: var(--link-default);
+@link__text-decoration: none;
+
+@link__visited__color: var(--red-link-visited);
+@link__visited__text-decoration: none;
+
+@link__hover__color: var(--red-link);
+@link__hover__text-decoration: underline;
+
+@link__active__color: var(--red-link);
+@link__active__text-decoration: underline;
+
+body {
+    color: var(--link-default);
+}
